@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Splitbee from "./Splitbee";
 
 type Props = {
   pageTitle: string;
@@ -14,6 +15,7 @@ export default function Header({ pageTitle, pageDescription }: Props) {
         <title>{title}</title>
         <meta name="description" content={pageDescription} />
       </Head>
+      <Splitbee />
       <header>
         <h1>Tennis Perfect</h1>
       </header>
