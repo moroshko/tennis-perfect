@@ -1,0 +1,41 @@
+:root {
+  --scale: 1.25;
+  --font-size-0: calc(var(--font-size-1) / var(--scale));
+  --font-size-1: calc(var(--font-size-2) / var(--scale));
+  --font-size-2: 18px;
+  --font-size-3: calc(var(--font-size-2) * var(--scale));
+  --font-size-4: calc(var(--font-size-3) * var(--scale));
+
+  --line-height: 1.625;
+  --line-height-0: calc(var(--font-size-0) * var(--line-height));
+  --line-height-1: calc(var(--font-size-1) * var(--line-height));
+  --line-height-2: calc(var(--font-size-2) * var(--line-height));
+  --line-height-3: calc(var(--font-size-3) * var(--line-height));
+  --line-height-4: calc(var(--font-size-4) * var(--line-height));
+
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: var(--font-size-2);
+  line-height: var(--line-height-2);
+  color: var(--grey-900);
+}
+* {
+  box-sizing: border-box;
+}
+svg {
+  display: block;
+}
