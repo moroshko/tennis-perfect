@@ -50,6 +50,9 @@ body {
 * {
   box-sizing: border-box;
 }
+strong {
+  font-weight: 600;
+}
 svg {
   display: block;
 }
