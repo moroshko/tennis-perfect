@@ -33,7 +33,7 @@ export type QueueData = {
 const SPLITBEE_SCRIPT_ID = "tennis-perfect-splitbee";
 
 function isSplitbeeEnabled() {
-  return window.location.host === "www.tennis-perfect.com.au";
+  return window.location.host === "www.tennisperfect.com.au";
 }
 
 export function trackEvent(eventName: string) {
