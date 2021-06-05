@@ -1,12 +1,26 @@
 .aboutTennisPerfect {
-  margin-top: 60px;
+  margin-top: 32px;
 }
 .aboutOlga {
+  margin-top: 32px;
   display: grid;
-  grid-template-columns: 1fr 320px;
-  grid-column-gap: 60px;
-  margin-top: 60px;
+  grid-template-columns: 1fr;
 }
-.aboutOlgaContent {
-  margin-top: -18px;
+@media (max-width: 767px) {
+  .aboutOlgaContent {
+    grid-row: 2/3;
+  }
+}
+@media (min-width: 768px) {
+  .aboutTennisPerfect {
+    margin-top: 60px;
+  }
+  .aboutOlga {
+    margin-top: 60px;
+    grid-template-columns: 1fr 320px;
+    grid-column-gap: 60px;
+  }
+  .aboutOlgaContent {
+    margin-top: -18px;
+  }
 }

@@ -9,6 +9,7 @@
 .h1 {
   margin: 0;
   font-size: var(--font-size-4);
+  line-height: var(--line-height-4);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
