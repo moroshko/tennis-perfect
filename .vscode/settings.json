@@ -1,0 +1,12 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#bef264",
+    "titleBar.inactiveBackground": "#bef264",
+    "titleBar.activeForeground": "#000",
+    "titleBar.inactiveForeground": "#000"
+  },
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  }
+}

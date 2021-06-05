@@ -1,0 +1,15 @@
+.header {
+  background-color: var(--primary-300);
+}
+.content {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 48px 0;
+}
+.h1 {
+  margin: 0;
+  font-size: var(--font-size-4);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
