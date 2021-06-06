@@ -1,4 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
+import { trackEvent } from "../components/Splitbee";
+import Facebook from "../components/icons/Facebook";
+import Instagram from "../components/icons/Instagram";
 import styles from "../styles/Home.module.css";
 
 function HomePage() {
@@ -61,6 +65,32 @@ function HomePage() {
             height={427}
             priority
           />
+          <div className={styles.socialIcons}>
+            <Link href="https://www.facebook.com/TennisCoachOlga" passHref>
+              <a
+                href="/"
+                target="_blank"
+                title="Olga’s Facebook page"
+                onClick={() => {
+                  trackEvent("Facebook icon clicked");
+                }}
+              >
+                <Facebook />
+              </a>
+            </Link>
+            <Link href="https://www.instagram.com/olga_tennis" passHref>
+              <a
+                href="/"
+                target="_blank"
+                title="Olga’s Instagram page"
+                onClick={() => {
+                  trackEvent("Instagram icon clicked");
+                }}
+              >
+                <Instagram />
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
     </main>

@@ -6,6 +6,12 @@
   display: grid;
   grid-template-columns: 1fr;
 }
+.socialIcons {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: 40px 40px;
+  grid-column-gap: 16px;
+}
 @media (max-width: 767px) {
   .aboutOlgaContent {
     grid-row: 2/3;
