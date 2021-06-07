@@ -6,7 +6,6 @@
 .content {
   max-width: var(--max-content-width);
   margin: 0 auto;
-  padding: 48px 0;
   display: grid;
   grid-row-gap: 16px;
 }
@@ -22,6 +21,9 @@
   margin-left: 16px;
 }
 @media (max-width: 767px) {
+  .content {
+    padding: 48px 0 64px 0;
+  }
   .socialLinks {
     margin-top: 32px;
   }
@@ -34,5 +36,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 48px 0;
   }
 }

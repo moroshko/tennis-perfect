@@ -4,7 +4,7 @@
 .aboutOlga {
   margin-top: 32px;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-row-gap: 24px;
 }
 .aboutOlgaContent > p:first-of-type {
   margin-top: 0;
