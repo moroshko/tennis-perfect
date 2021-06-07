@@ -2,16 +2,9 @@ type Props = {
   size?: number;
 };
 
-export default function Facebook({ size = 40 }: Props) {
+export default function FacebookIcon({ size = 32 }: Props) {
   return (
-    <svg
-      className="duotone-icon"
-      viewBox="0 0 256 256"
-      width={size}
-      height={size}
-      fill="#000000"
-      role="img"
-    >
+    <svg viewBox="0 0 256 256" width={size} height={size} role="img">
       <circle cx="128" cy="128" r="96" opacity="0.2" />
       <circle
         cx="128"

@@ -1,0 +1,12 @@
+.contactMethods {
+  margin-top: 32px;
+  display: grid;
+  grid-row-gap: 32px;
+}
+.contactLink {
+  display: flex;
+  align-items: center;
+}
+.contactLinkContent {
+  margin-left: 16px;
+}

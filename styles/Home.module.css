@@ -6,11 +6,11 @@
   display: grid;
   grid-template-columns: 1fr;
 }
-.socialIcons {
-  margin-top: 8px;
-  display: grid;
-  grid-template-columns: 40px 40px;
-  grid-column-gap: 16px;
+.aboutOlgaContent > p:first-of-type {
+  margin-top: 0;
+}
+.aboutOlgaContent > p:last-of-type {
+  margin-bottom: 0;
 }
 @media (max-width: 767px) {
   .aboutOlgaContent {
@@ -25,8 +25,5 @@
     margin-top: 60px;
     grid-template-columns: 1fr 320px;
     grid-column-gap: 60px;
-  }
-  .aboutOlgaContent {
-    margin-top: -18px;
   }
 }

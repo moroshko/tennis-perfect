@@ -1,0 +1,17 @@
+.button {
+  font-family: var(--font-family-body);
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  background-color: var(--blue-700);
+  transition: background-color 0.2s ease-in;
+  font-size: var(--font-size-2);
+  padding: 12px 28px;
+}
+.button:not(:disabled):hover {
+  background-color: var(--blue-800);
+}
+.linkButton {
+  display: inline-block;
+  text-decoration: none;
+}

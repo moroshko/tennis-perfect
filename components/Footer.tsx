@@ -1,5 +1,6 @@
-import Link from "next/link";
 import { trackEvent } from "./Splitbee";
+import FacebookIcon from "./icons/Facebook";
+import InstagramIcon from "./icons/Instagram";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -7,36 +8,34 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.content}>
         <span>{`Tennis Perfect © ${new Date().getFullYear()}`}</span>
-        <span className={styles.separator} aria-hidden="true">
-          •
-        </span>
-        <Link href="https://www.facebook.com/TennisCoachOlga" passHref>
+        <div className={styles.socialLinks}>
           <a
-            href="/"
+            className={styles.socialLink}
+            href="https://www.facebook.com/TennisCoachOlga"
             target="_blank"
+            rel="noreferrer"
             title="Olga’s Facebook page"
             onClick={() => {
               trackEvent("Footer Facebook link clicked");
             }}
           >
-            Facebook
+            <FacebookIcon />
+            <span className={styles.socialLinkContent}>Facebook</span>
           </a>
-        </Link>
-        <span className={styles.separator} aria-hidden="true">
-          •
-        </span>
-        <Link href="https://www.instagram.com/olga_tennis" passHref>
           <a
-            href="/"
+            className={styles.socialLink}
+            href="https://www.instagram.com/olga_tennis"
             target="_blank"
+            rel="noreferrer"
             title="Olga’s Instagram page"
             onClick={() => {
               trackEvent("Facebook Instagram link clicked");
             }}
           >
-            Instagram
+            <InstagramIcon />
+            <span className={styles.socialLinkContent}>Instagram</span>
           </a>
-        </Link>
+        </div>
       </div>
     </footer>
   );

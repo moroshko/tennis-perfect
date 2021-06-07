@@ -1,8 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
-import { trackEvent } from "../components/Splitbee";
-import Facebook from "../components/icons/Facebook";
-import Instagram from "../components/icons/Instagram";
+import Button from "../components/Button";
 import styles from "../styles/Home.module.css";
 
 function HomePage() {
@@ -51,10 +48,10 @@ function HomePage() {
             New York City’s premier clubs.
           </p>
           <p>
-            She takes a unique approach to each student, finding ways to improve
-            their game in a short period of time. She always believes in her
-            students’ ability to learn, as this is essential in helping them to
-            achieve their full potential.
+            Olga takes a unique approach to each student, finding ways to
+            improve their game in a short period of time. She always believes in
+            her students’ ability to learn, as this is essential in helping them
+            to achieve their full potential.
           </p>
         </div>
         <div>
@@ -65,34 +62,11 @@ function HomePage() {
             height={427}
             priority
           />
-          <div className={styles.socialIcons}>
-            <Link href="https://www.facebook.com/TennisCoachOlga" passHref>
-              <a
-                href="/"
-                target="_blank"
-                title="Olga’s Facebook page"
-                onClick={() => {
-                  trackEvent("Facebook icon clicked");
-                }}
-              >
-                <Facebook />
-              </a>
-            </Link>
-            <Link href="https://www.instagram.com/olga_tennis" passHref>
-              <a
-                href="/"
-                target="_blank"
-                title="Olga’s Instagram page"
-                onClick={() => {
-                  trackEvent("Instagram icon clicked");
-                }}
-              >
-                <Instagram />
-              </a>
-            </Link>
-          </div>
         </div>
       </div>
+      <Button margin="32px 0 0 0" href="/contact">
+        Book a lesson
+      </Button>
     </main>
   );
 }

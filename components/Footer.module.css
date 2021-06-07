@@ -1,6 +1,7 @@
 .footer {
   margin-top: 32px;
   background-color: var(--blue-200);
+  color: var(--blue-800);
 }
 .content {
   max-width: var(--max-content-width);
@@ -9,8 +10,21 @@
   display: grid;
   grid-row-gap: 16px;
 }
-.separator {
-  display: none;
+.socialLinks {
+  display: grid;
+  grid-row-gap: 24px;
+}
+.socialLink {
+  display: flex;
+  align-items: center;
+}
+.socialLinkContent {
+  margin-left: 16px;
+}
+@media (max-width: 767px) {
+  .socialLinks {
+    margin-top: 32px;
+  }
 }
 @media (min-width: 768px) {
   .footer {
@@ -19,10 +33,6 @@
   .content {
     display: flex;
     flex-direction: row;
-  }
-  .separator {
-    display: inline-block;
-    margin: 0 16px;
-    color: var(--blue-900);
+    justify-content: space-between;
   }
 }

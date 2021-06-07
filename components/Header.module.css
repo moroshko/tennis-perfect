@@ -1,13 +1,15 @@
 .header {
-  background-color: var(--primary-300);
+  background-color: var(--blue-200);
 }
 .content {
   max-width: var(--max-content-width);
   margin: 0 auto;
   padding: 48px 0;
 }
-.h1 {
+.homeLink {
   margin: 0;
+  color: var(--blue-900);
+  text-decoration: none;
   font-size: var(--font-size-4);
   line-height: var(--line-height-4);
   font-weight: 600;

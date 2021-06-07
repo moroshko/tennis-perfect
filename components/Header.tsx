@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Splitbee from "./Splitbee";
 import styles from "./Header.module.css";
 
@@ -24,7 +25,11 @@ export default function Header({ pageTitle, pageDescription }: Props) {
       <Splitbee />
       <header className={styles.header}>
         <div className={styles.content}>
-          <h1 className={styles.h1}>Tennis Perfect</h1>
+          <Link href="/" passHref>
+            <a href="/" className={styles.homeLink}>
+              Tennis Perfect
+            </a>
+          </Link>
         </div>
       </header>
     </>
